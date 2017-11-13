@@ -1,0 +1,73 @@
+body{
+	background-color: #3d7272;
+	margin: 50vh;
+
+}
+
+.hamburger{
+	height: 60px;
+	width:70px;
+	border: 0;
+	border-top: 10px solid #fff;
+	background: transparent; /*#3d7272*/
+	position: relative;
+	border-radius: 3px 3px 0 0;
+	cursor: pointer;
+}
+
+.hamburger::before, .hamburger::after{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	border-top: 10px solid white;
+				/****/
+	transition: 0.3s transform linear;
+				/****/
+}
+
+.hamburger::after{
+	transform: translateY(15px);
+	border-radius: 2px 2px 2px 2px;
+	
+}
+
+.hamburger::before{
+	
+	border-radius: 0 0 3px 3px;	
+	transform: translateY(40px);
+}
+
+/****ANIMATE***/
+
+.hamburger:focus{
+	transform: rotate(51deg) translateY(-11px);
+	border-top: none;
+	border-radius: 2px 2px 2px 2px;
+	
+}
+
+.hamburger:focus::after{
+	transform: rotate(-90deg) translateX(-42px);
+	border-radius: 2px 2px 2px 2px;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
