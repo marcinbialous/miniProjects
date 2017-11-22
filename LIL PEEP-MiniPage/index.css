@@ -1,0 +1,303 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html{
+	font-size: 10px;
+}
+
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height:100vh;
+	width: 100%;
+	background: #92d0c5;
+	overflow: hidden;
+	z-index: 1;
+	
+	
+}
+
+
+main{
+	height: 100vh;
+	background-color: crimson;
+	margin-top: 100vh;
+	z-index: 2;
+	position: relative;
+}
+header img{
+	position:absolute;
+	bottom: 4%;
+	right: -100%;
+	height: 75vh;
+	
+}
+header nav{
+	position: absolute;
+	font-size: 4rem;
+	top: 3%;
+	right: 4%;
+	z-index: 3;
+}
+
+header hgroup{
+	position: absolute;
+	top: 16%;
+	left: 10%;
+	z-index: 1;
+	text-transform: uppercase;
+	transform: rotate(-15deg);
+	
+}
+
+header h1{
+font-size: 3rem;
+	font-family: sans-serif;
+	font-weight: 700;
+}
+
+header h2{
+	
+	font-size: 2rem;
+	font-family: 'Chelsea Market', cursive;
+	font-weight: 100;
+	
+	
+}
+
+#arrow{
+	width: 60px;
+	height: 60px;
+	border: 5px solid black;
+	position: absolute;
+	bottom: 10%;
+	left:50%;
+	border-radius: 50%;
+	transform: translateX(-50%);
+	font-size: 3rem;
+	text-align: center;
+	overflow: hidden;
+	text-shadow: 0 14px 0 black, 0 28px 0 black;
+	transition: 0.5s ease;
+}
+
+#arrow:hover{
+	color:#5a5a5a;
+	text-shadow: 0 14px 0 #5a5a5a, 0 28px 0 #5a5a5a;
+	border-color: #262831;
+	-webkit-box-shadow: 0px 0px 50px 9px rgba(161,203,204,1);
+	-moz-box-shadow: 0px 0px 50px 9px 			rgba(161,203,204,1);
+	box-shadow: 0px 0px 50px 9px rgba(161,203,204,1);
+	cursor: pointer;
+}
+.fa-chevron-down{
+	animation: arrow 1.4s infinite linear;
+}
+
+/*-----responsive--------*/
+
+
+@media (orientation: portrait){
+	h3
+}
+
+@media (orientation: landscape){
+	
+	header img{
+		bottom: 0;
+		right: -20%;
+		height: 90vh;
+			}
+	
+	header hgroup{
+	top: 25%;
+	left: 10%;
+	z-index: 1;
+
+}
+	
+	header h1{
+			font-size: 5rem;
+		}
+
+	header h2{
+			font-size: 3rem;
+		}
+}
+@media (max-width: 375px){
+	header h1{
+			font-size: 4.5rem;
+		}
+
+	header h2{
+			font-size: 2.5rem;
+		}
+	}
+
+@media (min-width: 414px){
+	header h1{
+			font-size: 5rem;
+		}
+
+	header h2{
+			font-size: 3rem;
+		}
+}
+
+@media (min-width: 576px){
+	header hgroup{
+	top: 25%;
+}
+	
+	header h1{
+			font-size: 6rem;
+		}
+
+	header h2{
+			font-size: 4rem;
+		}
+	
+	header img{
+		right: -8%;
+		height: 70vh;
+		bottom: 0;
+			}
+	
+	header nav{
+	font-size: 5rem;
+		}
+	
+}
+
+@media (min-width: 768px){
+	
+	header hgroup{
+	top: 25%;
+}
+	
+	header h1{
+			font-size: 7rem;
+		}
+
+	header h2{
+			font-size: 5rem;
+		}
+	
+	header img{
+		right: -95%;
+		height: 90vh;
+		bottom: -5%;
+			}
+	
+	header nav{
+	font-size: 6rem;
+		}
+	
+	#arrow{
+	width: 100px;
+	height: 100px;
+	border: 6px solid black;
+	font-size: 7rem;
+	text-shadow: 0 30px 0 black, 0 60px 0 black;
+	}
+	
+}
+
+@media (min-width: 992px) {
+
+	
+	header img{
+		right: -35%;
+		bottom: -2%;
+			}
+
+}
+
+@media (min-width: 1024px){
+	
+	
+	header h1{
+			font-size: 8rem;
+		}
+
+	header h2{
+			font-size: 6rem;
+		}
+	
+	header img{
+		right: -45%;
+		bottom: -5%;
+			}
+	
+	#arrow{
+	width: 110px;
+	height: 110px;
+	border: 6px solid black;
+	font-size: 6rem;
+	text-shadow: 0 25px 0 black, 0 50px 0 black;
+	}
+	
+}
+	
+@media (min-width: 1200px) {
+
+	
+	header img{
+		bottom: -2%;
+			}
+}
+
+@media (min-width: 1600px) {
+		
+	header h1{
+			font-size: 11rem;
+		}
+
+	header h2{
+			font-size: 8rem;
+		}
+	
+	header img{
+		right: -25%;
+			}
+}
+
+
+/*--------Animation--------*/
+@keyframes arrow{
+	0%{
+		transform: translateY(-55px)
+	}
+	
+	50%{
+		transform: translateY(0px)
+	}
+	
+	100%{
+		transform: translateY(50px)
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
