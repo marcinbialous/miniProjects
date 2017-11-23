@@ -15,19 +15,79 @@ header{
 	width: 100%;
 	background: #92d0c5;
 	overflow: hidden;
-	z-index: 1;
-	
-	
+	z-index: 1;	
 }
 
 
 main{
-	height: 100vh;
+	margin-top: 2%;
+	min-height: 100vh;
 	background-color: crimson;
 	margin-top: 100vh;
 	z-index: 2;
 	position: relative;
+	font-family: 'Chelsea Market';
+	text-align: center;
 }
+section{
+	font-size: 4rem;
+}
+
+
+.flex-container{
+	margin: 0;
+	padding: 0;	
+	list-style: none;
+	display: -webkit-box;
+  	display: -moz-box;
+  	display: -ms-flexbox;
+  	display: -webkit-flex;
+  	display: flex;
+	
+	-webkit-flex-flow: row wrap;
+	font-family: sans-serif;
+	justify-content: space-around;
+	margin-bottom: 20px;
+}
+
+/******Style flex-items******/
+
+.photo{
+	
+	margin: 15px 0;
+	background: #8b3636;
+	width: 40%;
+	padding: 10px;
+	border-radius: 5px;
+  border: 1px solid crimson;
+  box-sizing: border-box;
+	opacity: 0.8;
+	font-size: 1.5rem;
+	font-family: 'Chelsea Market';
+	transition: 0.3s all linear;
+}
+
+.photo img{
+	width: 100%;
+	
+}
+
+.photo:nth-child(3n){
+	transform: rotate(5deg) 
+}
+.photo:nth-child(3n-1){
+	transform: rotate(7deg)
+		scale(0.8)
+}
+.photo{
+	transform: rotate(-5deg)
+}
+
+.photo:hover{
+	opacity: 1;
+	transform: none;
+}
+
 header img{
 	position:absolute;
 	bottom: 4%;
@@ -84,17 +144,18 @@ header h2{
 	transition: 0.5s ease;
 }
 
-#arrow:hover{
-	color:#5a5a5a;
-	text-shadow: 0 14px 0 #5a5a5a, 0 28px 0 #5a5a5a;
-	border-color: #262831;
-	-webkit-box-shadow: 0px 0px 50px 9px rgba(161,203,204,1);
-	-moz-box-shadow: 0px 0px 50px 9px 			rgba(161,203,204,1);
-	box-shadow: 0px 0px 50px 9px rgba(161,203,204,1);
-	cursor: pointer;
-}
+
 .fa-chevron-down{
 	animation: arrow 1.4s infinite linear;
+}
+#arrow:hover{
+	color:#5a5a5a;
+	text-shadow: 0 0px 0 #5a5a5a, 0 0px 0 #5a5a5a;
+	border-color: #262831;
+	-webkit-box-shadow: 0px 0px 50px 9px rgba(161,203,204,1);
+	-moz-box-shadow: 0px 0px 50px 9px rgba(161,203,204,1);
+	box-shadow: 0px 0px 50px 9px rgba(161,203,204,1);
+	cursor: pointer;
 }
 
 /*-----responsive--------*/
@@ -280,24 +341,4 @@ header h2{
 		transform: translateY(50px)
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
